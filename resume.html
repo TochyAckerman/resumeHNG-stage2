@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&family=Sanchez&display=swap" rel="stylesheet">
+  <!--<link rel="stylesheet" href="https://use.fontawesome.com/release">-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <title>Resume Design using Flexbox</title>
+  <style>
+    html{
+      background-color: #444;
+      padding: 0 1em;
+    }
+    body{
+      background-color: #fff;
+      margin: 1em auto;
+      max-width: 50em;
+    }
+    p, ul {
+      font-family: 'Sanchez', serif;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    :root{
+      --yellowish: #eeb14f;
+      --dark-purple: #263547;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    .title-holder {
+      align-items: center;
+    }
+    .header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: var(--dark-purple);
+    }
+    .name {
+      color: var(--yellowish);
+      font-family: 'Montserrat', serif;
+      text-transform: uppercase;
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 50px;
+    }
+    .designare {
+      color: var(--yellowish);
+      font-family: 'Sanchez', serif;
+      text-transform: uppercase;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 50px;
+    }
+    .content-body {
+      display: flex;
+      flex-direction: row;
+    }
+    .wrapper {
+      margin: 28px;
+    }
+    .sectin-left {
+      flex: 1;
+      background-color: var(--yellowish)
+    }
+    .section-left ul {
+      list-style: none;
+      margin-left: -40px;
+      text-transform: capitalize;
+      font-size: 12px;
+    }
+    h2 {
+      text-transform: uppercase;
+      font-size: 0.9em;
+      font-weight: bold;
+      font-family: 'Montserrat', serif;
+      letter-spacing: 2px;
+    }
+    h3 {
+      text-transform: uppercase;
+      font-size: 0.7em;
+      font-family: 'Sanchez', serif;
+      font-weight: normal;
+      letter-spacing: 2px;
+    }
+    h4 {
+      font-family: 'Sanchez', serif;
+      font-weight: normal;
+      font-size: 0.8em;
+      margin-top: 10px;
+      font-style: italic;
+      letter-spacing: 2px;
+    }
+    .section-right {
+      flex: 2;
+    }
+    .section-right .wrapper {
+      margin-left: 50px;
+    }
+    .section-right ul {
+      margin-left: 20px;
+    }
+    .section-right h2 {
+      color: var(--yellowish);
+      font-weight: bold;
+    }
+    .footer {
+      margin-left: 100px;
+    }
+
+
+
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="header"></div>
+      <div class="logo"></div>
+      <div class="title-holder">
+        <div class="name">Tochukwu Ubah</div>
+        <div class="designare">Designer/Frontend</div>
+      </div>
+    <div class="content-body">
+      <div class="section-left">
+        <div class="wrapper">
+          <div class="list">
+            <h2>professional skills</h2>
+            <ul>
+              <li>User Interaction Design</li>
+              <li>User Experience Design</li>
+              <li>Frontend Developer</li>
+              <li>Photo Editing</li>
+              <li>video Editing</li>
+            </ul>
+          </div>
+          <div class="list">
+            <h2>personal skills</h2>
+            <ul>
+              <li>Creative Spirit</li>
+              <li>Organized</li>
+              <li>Time Management</li>
+              <li>Team Player</li>
+              <li>Fast learner</li>
+              <li>Reliable and professional</li>
+            </ul>
+          </div>
+          <div class="list">
+            <h2>contact</h2>
+            <ul>
+              <li>Phone: +234 811 1088 6027</li>
+              <li>Email: ubahtobah@gmail.com</li>
+              <li>Website: <a href="https://www.behance.net/TochuCu">https://www.behance.net/TochuCu</a></li>
+            </ul>
+          </div>
+
+          <div class="list">
+            <h2>Social</h2>
+            <p>
+              <i class="fab fa-twitter"></i>
+              <span><a href="https://twitter.com/TochuCu?s=08">@TochuCu</a></span><!--Twitter -->
+            </p>
+            <p>
+              <i class="fab fa-linkedin-in"></i>
+              <span><a href="https://www.linkedin.com/in/tochucu">Tochukwu Ubah</a></span><!--Linkedin -->
+            </p>
+            <p>
+              <i class="fab fa-github-alt"></i>
+              <span><a href="https://github.com/TochyAckerman">TochyAckerman</a></span><!--Github -->
+            </p>
+          </div>
+
+        </div><!-- end wrapper -->
+      </div><!-- end section-left -->
+
+      <div class="section-right">
+        <div class="wrapper">
+          <div class="content">
+            <h2>about</h2>
+            <p>I am a User Interaction and Experience designer with a little knowledge of Frontend
+              seeking a full-time position in the field of UI/UX and Frontend development, where I can
+              apply my knowledge and skills for continuous development.</p>
+          </div><!-- end content -->
+
+          <div class="content">
+            <h2>Work Experience</h2>
+            <h3>Social Media Manager</h3>
+            <h4>Eden Solutions & Resources ltd | June 2019 - Nov 2019</h4>
+            <ul>
+              <li>Managed social media accounts</li>
+              <li>Created social media graphics</li>
+              <li>Created video graphics</li>
+              <li>Increased social media following</li>
+            </ul>
+
+            <h3>UI/UX</h3>
+            <h4>Zuri & Ingressive4Good | May 2021 - Aug 2021</h4>
+            <ul>
+              <li>Created a fitness WebApp interface design</li>
+              <li>Landing page</li>
+              <li>User research for online clothing donation</li>
+              <li>Landing Page</li>
+            </ul>
+
+          </div><!-- end of content -->
+
+          <div class="content">
+            <h2>education</h2>
+            <h3>Bachelor of Science in Computer Science</h3>
+            <h4>Federal University of Petroleum Resources Effurun | 2016 - 2021</h4>
+
+          </div><!-- end of content -->
+
+        </div><!-- end wrapper section-right-->
+
+      </div><!-- end section-right -->
+
+    </div>
+
+    <div class="footer">
+      <p>PS: this is my profile and you can contact me via the links above</p>
+    </div>
+  </div>
+</body>
+</html>
